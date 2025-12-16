@@ -11,37 +11,66 @@
 <header>
   <div class="logo">TechGeek Academy</div>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="courses.html">Courses</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+    <a href="#home">Home</a>
+    <a href="#courses">Courses</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
   </nav>
 </header>
 
-<section class="hero">
-  <h1>Professional SAP Training</h1>
-  <p>Learn SAP from Industry Experts with Real-Time Projects</p>
-  <a class="btn" href="courses.html">Explore Courses</a>
+<section id="home" class="hero" style="background-image: url('images/hero.jpg');">
+  <div class="overlay">
+    <h1>Professional SAP Training</h1>
+    <p>Learn SAP from Industry Experts with Real-Time Projects</p>
+    <a class="btn" href="#courses">Explore Courses</a>
+  </div>
 </section>
 
-<section class="features">
-  <div class="box">
-    <h3>Expert Trainers</h3>
-    <p>10+ years of real industry experience</p>
-  </div>
-  <div class="box">
-    <h3>Live Projects</h3>
-    <p>Hands-on practical sessions</p>
-  </div>
-  <div class="box">
-    <h3>Placement Support</h3>
-    <p>Resume & interview guidance</p>
+<section id="courses" class="features">
+  <h2>Our Courses</h2>
+  <div class="card-container">
+    <div class="card">
+      <img src="images/course1.jpg" alt="SAP MM">
+      <h3>SAP MM</h3>
+      <p>Materials Management with real-time scenarios</p>
+    </div>
+    <div class="card">
+      <img src="images/course2.jpg" alt="SAP SD">
+      <h3>SAP SD</h3>
+      <p>Sales & Distribution end-to-end process</p>
+    </div>
+    <div class="card">
+      <img src="images/course1.jpg" alt="SAP FICO">
+      <h3>SAP FICO</h3>
+      <p>Financial Accounting & Controlling</p>
+    </div>
   </div>
 </section>
+
+<section id="about" class="content">
+  <h2>About Us</h2>
+  <p>
+    TechGeek Academy is a professional training institute focused on SAP and IT skills.
+    We provide job-oriented training with live projects and expert mentorship.
+  </p>
+</section>
+
+<section id="contact" class="content contact-section">
+  <h2>Contact Us</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<a href="https://wa.me/1234567890" class="whatsapp-btn" target="_blank">Chat with WhatsApp</a>
 
 <footer>
   © 2025 TechGeek Academy | All Rights Reserved
 </footer>
 
+<script src="js/script.js"></script>
 </body>
 </html>
