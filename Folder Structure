@@ -5,5 +5,9 @@ techgeek-website/
 ├── contact.html
 ├── css/
 │   └── style.css
+├── js/
+│   └── script.js
 └── images/
-    └── (optional hero.jpg or logos)
+    ├── hero.jpg         (banner image)
+    ├── course1.jpg      (optional course image)
+    └── course2.jpg
