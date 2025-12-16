@@ -1,0 +1,23 @@
+/* Simple responsive styles for training institute site */
+:root{
+  --accent:#0b76ef;
+  --bg:#f9fbff;
+  --text:#222;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; color:var(--text); background:var(--bg)}
+.container{max-width:1000px;margin:0 auto;padding:1.25rem}
+.site-header{background:white;border-bottom:1px solid #eee}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.logo{margin:0;font-size:1.25rem;color:var(--accent)}
+.site-header nav a{margin-left:1rem;color:#333;text-decoration:none}
+.hero{padding:3rem 0;background:linear-gradient(90deg, rgba(11,118,239,0.08), rgba(11,118,239,0.03));text-align:center}
+.hero h2{margin:0 0 .5rem;font-size:1.75rem}
+.btn{display:inline-block;padding:.6rem 1rem;background:var(--accent);color:#fff;border-radius:6px;text-decoration:none;border:none;cursor:pointer}
+.card{background:white;margin:1rem 0;padding:1rem;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.course h4{margin:.25rem 0}
+.site-footer{padding:1rem 0;text-align:center;color:#666}
+form input, form textarea{width:100%;padding:.5rem;margin:.35rem 0;border:1px solid #ddd;border-radius:6px}
+.small{font-size:.9rem;color:#666}
+@media(min-width:900px){.hero h2{font-size:2.25rem}}
