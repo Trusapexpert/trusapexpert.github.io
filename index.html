@@ -1,148 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find the Best SAP Course Providers, Fees, and Reviews | Compare SAP Training Institutes</title>
-    <meta name="description" content="Your #1 resource to instantly compare official SAP Authorized Training centers and top independent institutes based on real reviews, accurate fees, placement records, and course duration for SAP FICO, S/4HANA, ABAP, and more.">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechGeek Academy | Home</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1>Find the **Best SAP Course** Providers, Fees, and Reviews</h1>
-            <p class="tagline">Compare SAP Training Institutes, Courses, and Placement Records Instantly</p>
-        </div>
-    </header>
+<header>
+  <div class="logo">TechGeek Academy</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-    <div class="container">
-        <section class="hero-search">
-            <p style="font-size: 1.1em; text-align: center; color: #555;">
-                **🎯 Start Your SAP Career Search:** Search by Module or Institute Name.
-            </p>
-            <input type="text" id="courseSearch" onkeyup="filterTable()" placeholder="Search by Module (e.g., FICO) or Institute Name...">
-            <a href="#comparison" class="cta-button">➡️ Compare All Providers Now!</a>
-        </section>
+<section class="hero">
+  <h1>Professional SAP Training</h1>
+  <p>Learn SAP from Industry Experts with Real-Time Projects</p>
+  <a class="btn" href="courses.html">Explore Courses</a>
+</section>
 
-        <section class="comparison-section">
-            <h2 id="comparison">All SAP Course Providers (Top Rated)</h2>
+<section class="features">
+  <div class="box">
+    <h3>Expert Trainers</h3>
+    <p>10+ years of real industry experience</p>
+  </div>
+  <div class="box">
+    <h3>Live Projects</h3>
+    <p>Hands-on practical sessions</p>
+  </div>
+  <div class="box">
+    <h3>Placement Support</h3>
+    <p>Resume & interview guidance</p>
+  </div>
+</section>
 
-            <table class="comparison-table" id="providerTable">
-                <thead>
-                    <tr>
-                        <th>Institute</th>
-                        <th>Status</th>
-                        <th>Top Modules</th>
-                        <th>Training Mode</th>
-                        <th>Fees (Est.)</th>
-                        <th>Rating</th>
-                        <th>Placement Support</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="provider-row" data-modules="S/4HANA FICO ABAP">
-                        <td data-label="Institute">**SAP Official Training**</td>
-                        <td data-label="Status"><span class="status-authorized">SAP Authorized</span></td>
-                        <td data-label="Top Modules">S/4HANA (All), FICO, MM</td>
-                        <td data-label="Training Mode">Online (Live) / Classroom</td>
-                        <td data-label="Fees (Est.)">₹1,00,000+</td>
-                        <td data-label="Rating"><span class="rating">4.7/5</span></td>
-                        <td data-label="Placement Support">Official Certification</td>
-                        <td data-label="Action"><a href="#" class="detail-link">View Details</a></td>
-                    </tr>
-                    <tr class="provider-row" data-modules="FICO MM SD ABAP">
-                        <td data-label="Institute">**Srijan Institute**</td>
-                        <td data-label="Status"><span class="status-authorized">SAP Authorized</span></td>
-                        <td data-label="Top Modules">FICO, MM, SD, HANA</td>
-                        <td data-label="Training Mode">Online / Classroom</td>
-                        <td data-label="Fees (Est.)">₹35,000 - ₹50,000</td>
-                        <td data-label="Rating"><span class="rating">4.9/5</span></td>
-                        <td data-label="Placement Support">100% Placement Assistance</td>
-                        <td data-label="Action"><a href="#" class="detail-link">View Details</a></td>
-                    </tr>
-                    <tr class="provider-row" data-modules="S/4HANA FICO MM Cloud">
-                        <td data-label="Institute">**Simplilearn**</td>
-                        <td data-label="Status"><span class="status-independent">Independent/Online</span></td>
-                        <td data-label="Top Modules">S/4HANA, FICO, MM</td>
-                        <td data-label="Training Mode">Online (Self-Paced)</td>
-                        <td data-label="Fees (Est.)">₹40,000 - ₹60,000</td>
-                        <td data-label="Rating"><span class="rating">4.6/5</span></td>
-                        <td data-label="Placement Support">Career Service Pro</td>
-                        <td data-label="Action"><a href="#" class="detail-link">View Details</a></td>
-                    </tr>
-                     <tr class="provider-row" data-modules="FICO SD MM">
-                        <td data-label="Institute">**Henry Harvin**</td>
-                        <td data-label="Status"><span class="status-independent">Independent/Online</span></td>
-                        <td data-label="Top Modules">FICO, SD, MM</td>
-                        <td data-label="Training Mode">Online (Live)</td>
-                        <td data-label="Fees (Est.)">₹30,000 - ₹45,000</td>
-                        <td data-label="Rating"><span class="rating">4.5/5</span></td>
-                        <td data-label="Placement Support">Internship & Projects</td>
-                        <td data-label="Action"><a href="#" class="detail-link">View Details</a></td>
-                    </tr>
-                    <tr class="provider-row" data-modules="ABAP BASIS HANA">
-                        <td data-label="Institute">**Delphi Computech**</td>
-                        <td data-label="Status"><span class="status-authorized">SAP Authorized Partner</span></td>
-                        <td data-label="Top Modules">ABAP, BASIS, S/4HANA FICO</td>
-                        <td data-label="Training Mode">Classroom / Hybrid</td>
-                        <td data-label="Fees (Est.)">₹55,000 - ₹75,000</td>
-                        <td data-label="Rating"><span class="rating">4.8/5</span></td>
-                        <td data-label="Placement Support">90% Placement Rate</td>
-                        <td data-label="Action"><a href="#" class="detail-link">View Details</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+<footer>
+  © 2025 TechGeek Academy | All Rights Reserved
+</footer>
 
-        <section style="padding: 40px 0;">
-            <h2 style="border-bottom: none;">Explore the Top SAP Modules and Certifications</h2>
-            <p>Jump directly to the courses driving today's job market. We feature leading institutes specializing in these high-demand modules:</p>
-            <ul style="list-style-type: none; padding: 0;">
-                <li style="margin-bottom: 15px;">
-                    <strong style="color: var(--sap-blue);">SAP S/4HANA:</strong> The future of ERP. High demand for consultants in Finance and Logistics. <a href="#" class="detail-link">View S/4HANA Courses</a>
-                </li>
-                <li style="margin-bottom: 15px;">
-                    <strong style="color: var(--sap-blue);">SAP FICO:</strong> A foundational, evergreen module in Finance and Controlling. <a href="fico.html" class="detail-link">Compare FICO Training</a>
-                </li>
-                <li style="margin-bottom: 15px;">
-                    <strong style="color: var(--sap-blue);">SAP ABAP:</strong> The technical backbone for development and customization. <a href="#" class="detail-link">Find ABAP Institutes</a>
-                </li>
-            </ul>
-        </section>
-
-        <footer>
-            <p style="text-align: center; color: #777; padding: 20px 0; border-top: 1px solid var(--secondary-bg); margin-top: 30px;">
-                &copy; 2024 SAP Course Comparison Hub | <a href="about.html" class="detail-link">About Us</a> | <a href="#" class="detail-link">Contact</a>
-            </p>
-        </footer>
-    </div>
-
-    <script>
-        function filterTable() {
-            var input, filter, table, tr, i, txtValue;
-            input = document.getElementById("courseSearch");
-            filter = input.value.toUpperCase();
-            table = document.getElementById("providerTable");
-            tr = table.getElementsByClassName("provider-row");
-
-            for (i = 0; i < tr.length; i++) {
-                var instituteName = tr[i].getElementsByTagName("td")[0];
-                var modules = tr[i].getAttribute('data-modules');
-
-                if (instituteName || modules) {
-                    var instituteText = instituteName ? instituteName.textContent || instituteName.innerText : "";
-                    var modulesText = modules ? modules.toUpperCase() : "";
-
-                    if (instituteText.toUpperCase().indexOf(filter) > -1 || modulesText.indexOf(filter) > -1) {
-                        tr[i].style.display = "";
-                    } else {
-                        tr[i].style.display = "none";
-                    }
-                }
-            }
-        }
-    </script>
 </body>
 </html>
