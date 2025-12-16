@@ -1,31 +1,349 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>TruSAP Expert | SAP Training Institute</title>
-  <meta name="description" content="SAP FICO, MM, SD, S/4HANA Training with Certification">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the Best SAP Course Providers, Fees, and Reviews | Compare SAP Training Institutes</title>
+    <meta name="description" content="Your #1 resource to instantly compare official SAP Authorized Training centers and top independent institutes based on real reviews, accurate fees, placement records, and course duration for SAP FICO, S/4HANA, ABAP, and more.">
+    <style>
+        /* CSS for a clean, professional look */
+        :root {
+            --sap-blue: #007cc0;
+            --primary-text: #333;
+            --secondary-bg: #f7f7f7;
+            --border-color: #ddd;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--primary-text);
+            background-color: white;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--sap-blue);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            margin-top: 0;
+            opacity: 0.9;
+        }
+
+        .hero-search {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-top: -60px; /* Overlap with header for effect */
+            position: relative;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 15px;
+            font-size: 1em;
+            border: 2px solid var(--border-color);
+            border-radius: 6px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus {
+            border-color: var(--sap-blue);
+            outline: none;
+        }
+
+        .cta-button {
+            display: block;
+            width: 100%;
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #00b050; /* Green CTA */
+            color: white;
+            font-size: 1.1em;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #009944;
+        }
+
+        /* Comparison Table Styling */
+        .comparison-section {
+            padding: 50px 0;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: var(--sap-blue);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            background-color: white;
+        }
+
+        .comparison-table th, .comparison-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--secondary-bg);
+        }
+
+        .comparison-table th {
+            background-color: var(--sap-blue);
+            color: white;
+            font-weight: 600;
+            font-size: 0.9em;
+            text-transform: uppercase;
+        }
+
+        .comparison-table tr:hover {
+            background-color: #eef;
+        }
+
+        .status-authorized {
+            color: white;
+            background-color: var(--sap-blue);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+
+        .status-independent {
+            color: #555;
+            background-color: #ffc107;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+
+        .rating {
+            font-weight: bold;
+            color: #ff9800;
+        }
+
+        .detail-link {
+            color: var(--sap-blue);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .detail-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            .tagline {
+                font-size: 1em;
+            }
+            .hero-search {
+                margin-top: -30px;
+                padding: 20px;
+            }
+            .comparison-table, .comparison-table tbody, .comparison-table tr, .comparison-table td, .comparison-table th {
+                display: block;
+            }
+            .comparison-table thead {
+                display: none;
+            }
+            .comparison-table tr {
+                margin-bottom: 20px;
+                border: 1px solid var(--border-color);
+                border-radius: 8px;
+                overflow: hidden;
+            }
+            .comparison-table td {
+                text-align: right;
+                padding-left: 50%;
+                position: relative;
+            }
+            .comparison-table td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                font-weight: bold;
+                color: var(--sap-blue);
+            }
+        }
+    </style>
 </head>
 <body>
 
-<header>
-  <h2>TruSAP Expert</h2>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="courses.html">Courses</a>
-    <a href="login.html">Login</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+    <header>
+        <div class="container">
+            <h1>Find the **Best SAP Course** Providers, Fees, and Reviews</h1>
+            <p class="tagline">Compare SAP Training Institutes, Courses, and Placement Records Instantly</p>
+        </div>
+    </header>
 
-<section class="hero">
-  <h1>Become a Certified SAP Consultant</h1>
-  <p>Live Training | Real Projects | Job Assistance</p>
-  <a class="btn" href="courses.html">View Courses</a>
-</section>
+    <div class="container">
+        <section class="hero-search">
+            <p style="font-size: 1.1em; text-align: center; color: #555;">
+                **🎯 Start Your SAP Career Search:** Search by Module or Institute Name.
+            </p>
+            <input type="text" id="courseSearch" onkeyup="filterTable()" placeholder="Search by Module (e.g., FICO) or Institute Name...">
+            <a href="#comparison" class="cta-button">➡️ Compare All Providers Now!</a>
+        </section>
 
-<footer>© 2025 TruSAP Expert</footer>
+        <section class="comparison-section">
+            <h2 id="comparison">All SAP Course Providers (Top Rated)</h2>
 
-<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-btn">💬 WhatsApp</a>
+            <table class="comparison-table" id="providerTable">
+                <thead>
+                    <tr>
+                        <th>Institute</th>
+                        <th>Status</th>
+                        <th>Top Modules</th>
+                        <th>Training Mode</th>
+                        <th>Fees (Est.)</th>
+                        <th>Rating</th>
+                        <th>Placement Support</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="provider-row" data-modules="S/4HANA FICO ABAP">
+                        <td data-label="Institute">**SAP Official Training**</td>
+                        <td data-label="Status"><span class="status-authorized">SAP Authorized</span></td>
+                        <td data-label="Top Modules">S/4HANA (All), FICO, MM</td>
+                        <td data-label="Training Mode">Online (Live) / Classroom</td>
+                        <td data-label="Fees (Est.)">₹1,00,000+</td>
+                        <td data-label="Rating"><span class="rating">4.7/5</span></td>
+                        <td data-label="Placement Support">Official Certification</td>
+                        <td data-label="Action"><a href="#" class="detail-link">View Details</a></td>
+                    </tr>
+                    <tr class="provider-row" data-modules="FICO MM SD ABAP">
+                        <td data-label="Institute">**Srijan Institute**</td>
+                        <td data-label="Status"><span class="status-authorized">SAP Authorized</span></td>
+                        <td data-label="Top Modules">FICO, MM, SD, HANA</td>
+                        <td data-label="Training Mode">Online / Classroom</td>
+                        <td data-label="Fees (Est.)">₹35,000 - ₹50,000</td>
+                        <td data-label="Rating"><span class="rating">4.9/5</span></td>
+                        <td data-label="Placement Support">100% Placement Assistance</td>
+                        <td data-label="Action"><a href="#" class="detail-link">View Details</a></td>
+                    </tr>
+                    <tr class="provider-row" data-modules="S/4HANA FICO MM Cloud">
+                        <td data-label="Institute">**Simplilearn**</td>
+                        <td data-label="Status"><span class="status-independent">Independent/Online</span></td>
+                        <td data-label="Top Modules">S/4HANA, FICO, MM</td>
+                        <td data-label="Training Mode">Online (Self-Paced)</td>
+                        <td data-label="Fees (Est.)">₹40,000 - ₹60,000</td>
+                        <td data-label="Rating"><span class="rating">4.6/5</span></td>
+                        <td data-label="Placement Support">Career Service Pro</td>
+                        <td data-label="Action"><a href="#" class="detail-link">View Details</a></td>
+                    </tr>
+                     <tr class="provider-row" data-modules="FICO SD MM">
+                        <td data-label="Institute">**Henry Harvin**</td>
+                        <td data-label="Status"><span class="status-independent">Independent/Online</span></td>
+                        <td data-label="Top Modules">FICO, SD, MM</td>
+                        <td data-label="Training Mode">Online (Live)</td>
+                        <td data-label="Fees (Est.)">₹30,000 - ₹45,000</td>
+                        <td data-label="Rating"><span class="rating">4.5/5</span></td>
+                        <td data-label="Placement Support">Internship & Projects</td>
+                        <td data-label="Action"><a href="#" class="detail-link">View Details</a></td>
+                    </tr>
+                    <tr class="provider-row" data-modules="ABAP BASIS HANA">
+                        <td data-label="Institute">**Delphi Computech**</td>
+                        <td data-label="Status"><span class="status-authorized">SAP Authorized Partner</span></td>
+                        <td data-label="Top Modules">ABAP, BASIS, S/4HANA FICO</td>
+                        <td data-label="Training Mode">Classroom / Hybrid</td>
+                        <td data-label="Fees (Est.)">₹55,000 - ₹75,000</td>
+                        <td data-label="Rating"><span class="rating">4.8/5</span></td>
+                        <td data-label="Placement Support">90% Placement Rate</td>
+                        <td data-label="Action"><a href="#" class="detail-link">View Details</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
+        <section style="padding: 40px 0;">
+            <h2 style="border-bottom: none;">Explore the Top SAP Modules and Certifications</h2>
+            <p>Jump directly to the courses driving today's job market. We feature leading institutes specializing in these high-demand modules:</p>
+            <ul style="list-style-type: none; padding: 0;">
+                <li style="margin-bottom: 15px;">
+                    <strong style="color: var(--sap-blue);">SAP S/4HANA:</strong> The future of ERP. High demand for consultants in Finance and Logistics. <a href="#" class="detail-link">View S/4HANA Courses</a>
+                </li>
+                <li style="margin-bottom: 15px;">
+                    <strong style="color: var(--sap-blue);">SAP FICO:</strong> A foundational, evergreen module in Finance and Controlling. <a href="#" class="detail-link">Compare FICO Training</a>
+                </li>
+                <li style="margin-bottom: 15px;">
+                    <strong style="color: var(--sap-blue);">SAP ABAP:</strong> The technical backbone for development and customization. <a href="#" class="detail-link">Find ABAP Institutes</a>
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            <p style="text-align: center; color: #777; padding: 20px 0; border-top: 1px solid var(--secondary-bg); margin-top: 30px;">
+                &copy; 2024 SAP Course Comparison Hub | <a href="#" class="detail-link">About Us</a> | <a href="#" class="detail-link">Contact</a>
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // JavaScript for basic search/filter functionality
+        function filterTable() {
+            var input, filter, table, tr, i, txtValue;
+            input = document.getElementById("courseSearch");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("providerTable");
+            tr = table.getElementsByClassName("provider-row");
+
+            // Loop through all table rows, and hide those that don't match the search query
+            for (i = 0; i < tr.length; i++) {
+                // Check both the Institute name (first td) and the data-modules attribute
+                var instituteName = tr[i].getElementsByTagName("td")[0];
+                var modules = tr[i].getAttribute('data-modules');
+
+                if (instituteName || modules) {
+                    var instituteText = instituteName ? instituteName.textContent || instituteName.innerText : "";
+                    var modulesText = modules ? modules.toUpperCase() : "";
+
+                    if (instituteText.toUpperCase().indexOf(filter) > -1 || modulesText.indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
 </body>
 </html>
