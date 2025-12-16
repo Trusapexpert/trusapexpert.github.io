@@ -1,14 +1,12 @@
-document.addEventListener('DOMContentLoaded',function(){
-  const form = document.getElementById('contact-form');
-  form.addEventListener('submit', function(e){
+// Optional: Smooth scroll offset for fixed header
+const headerHeight = document.querySelector('header').offsetHeight;
+document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', e => {
     e.preventDefault();
-    const data = new FormData(form);
-    const name = data.get('name');
-    const email = data.get('email');
-    const message = data.get('message');
-    // Simple mailto fallback for a static site
-    const subject = encodeURIComponent('Website contact from ' + name);
-    const body = encodeURIComponent(message + '\n\nFrom: ' + name + ' <' + email + '>');
-    window.location.href = 'mailto:info@trusapexpert.com?subject=' + subject + '&body=' + body;
+    const target = document.querySelector(link.getAttribute('href'));
+    window.scrollTo({
+      top: target.offsetTop - headerHeight,
+      behavior: 'smooth'
+    });
   });
 });
